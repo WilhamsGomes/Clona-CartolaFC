@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+    background-color: #e9e9e9;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ESTILIZAÇÃO DO CABEÇALHO*/
+.conteiner-cabecalho{
+    display: flex;
+    height: 70px;
+    background-color: #ff7805;
+    box-shadow: 0 0 0.1em rgb(0, 0, 0);
+}
+
+.conteiner-cabecalho img{
+   height: 30px;
+   width: 120px;
+}
+
+.logo-cartola{
+    width: 60%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.logo-cartola img:hover{
+    cursor: pointer;
+}
+
+.conteiner-cabecalho li{
+    display: flex;
+    padding-left: 60px;
+}
+
+.nav-cabecalho{
+    height: 100%;
+    width: 250px;
+    margin-left: -70px;
+}
+
+li ul {
+    font-size: 15px;
+    color: #8b3600;
+    margin-top: 27px;
+    font-size: 13px;
+    font-weight: 1000;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.nav-cabecalho a{
+    text-decoration: none;
+}
+
+#dashboard{
+    color:white;
+}
+
+/* MENU HAMBURGUER */
+.container-hamburguer{
+  cursor: pointer;
+  
+}
+
+label{
+  position: relative;
+  display: block;
+  width: 25px;
+  margin-left: 80px;
+  margin-top: 25px;
+}
+
+label span{
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+}
+
+label span:nth-child(1){
+  top: 0;
+}
+
+label span:nth-child(2){
+  top: 8px;
+}
+
+label span:nth-child(3){
+  top: 16px;
+}
+
+/* FIM MENU HAMBURGUER*/
+
+/*FORMULÁRIO E APITO*/
+.barra-pesquisa{
+    display: flex;
+    height: 100%;
+    width: 200px;
+}
+
+.barra-pesquisa input{
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 30px;
+    width: 140px;
+    border-style:none;  
+    background-image: url(imgs/lupa.png);   
+    background-position: 5px 7px;
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-size: 17px;
+    margin-left: 20px;
+}
+
+input::placeholder{
+    font-weight: 600;
+    color: #ff7805;
+}
+
+.apito img{
+    margin-top: 13px;
+    height: 40px;
+    width: 40px;
+}
+
+.apito img:hover{
+    cursor: pointer;
+}
+
+/*SOBRE O TIME*/
+
+.sobre-time{
+    float: left;
+    width: 450px;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    line-height: 0px;
+}
+
+.title p{
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #b2acae;
+}
+
+.escudo img{
+    margin-top: -20px;
+    height: 190px;
+    width: 280px;
+    margin-left: 90px;
+}
+
+.subtitulo{
+    text-align: center;
+}
+
+.subtitulo p{
+    color: #b2acae;
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.botao{
+    text-align: center;
+}
+
+.botao button{
+    height: 40px;
+    width: 140px;
+    background-color: white;
+    font-weight: bold;
+    font-family: 'roboto';
+    border-style: none;
+    box-shadow:  0.1em 0.1em 0.2em -0.1em black;
+    border-radius: 3px;
+}
+
+.botao button:hover{
+    cursor: pointer;
+}
+
+.conteiner-pontuacao{
+    box-sizing: border-box;
+    display: flex;
+    background-color: #ffffff;
+    width: 300px;
+    height: 80px;
+    margin-left: 70px;
+    margin-top: 20px;
+    box-shadow:  0.1em 0.1em 0.2em -0.1em black;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.jogadores{
+    text-align: center;
+}
+
+.jogadores p {
+    color: #b2acae;
+    margin-left: 18px;
+    margin-top: 10px;
+}
+
+.jogadores h4{
+    font-size: 20px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+
+.parcial p{
+    color: #b2acae;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.parcial h4{
+    color: #36cc68;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-right: 15px;
+}
+
+/*PONTUADORES*/
+
+.seus-pontuadores{
+     margin-top: 30px;
+     height: 200px;
+}
+
+.titulos{
+    display: flex;
+}
+
+.titulos h5{
+    margin-left: 620px;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #ff7805;
+}
+
+.titulos h5:hover{
+    cursor: pointer;
+}
+
+.conteiners-jogadores{
+    display: flex;
+}
+
+.box01{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 280px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.box01 img {
+    height: 100px;
+    width: 100px;
+}
+
+/*PADRÃO ENTRE OS BOX DOS ATLETAS*/
+.infos-jogadores{
+    display: block;
+    margin-left:15px;
+}
+
+.informações-box01{
+    height: 80px;
+    width: auto;
+}
+
+.informações-box01 p, .informações-box01 h5 {
+    margin-bottom: -10px;
+}
+
+.informações-box01 p{
+    font-size: 11px;
+    color: #b2acae;
+}
+
+.informações-box01 h5{
+    margin-top: 15px;
+    margin-bottom: -5px;
+    font-size: 15px;
+}
+
+.pontuacao{
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-top: -30px;
+}
+
+.pontuacao p {
+    font-size: 15px;
+}
+
+.valor-pontos{
+    color: #b2acae;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.valor-pontos p {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.valor-dobro{
+    background-color: #36cc68;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 80%;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.valor-dobro p{
+    font-size: 10px;
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+.valor-dobrado{
+    font-weight: bold;
+    margin-left: 5px;
+    color: #36cc68;
+}
+
+.valor-maior-pont{
+    font-weight: bold;
+    margin-left: 0px;
+    color: #36cc68;
+}
+
+.valor-menor-pont{
+    font-weight: bold;
+    margin-left: 0px;
+    color: #f11010;
+}
+/*PADRÃO ENTRE OS BOX DOS ATLETAS*/
+
+.box02{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 280px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.box02 img {
+    height: 100px;
+    width: 100px;
+}
+
+.box03{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 280px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.box03 img {
+    height: 100px;
+    width: 100px;
+}
+
+
+/*PUBLICIDADE E FACEBOOK*/
+.bem-vindo{
+    margin-top: -20px;
+}
+
+.titulos-publi{
+    display: flex;
+}
+
+.title-facebook{
+    margin-left: 300px;
+}
+
+.inicial{
+    display: flex;
+}
+
+.propaganda{
+    display: block;
+    background-color: white;
+    height: 300px;
+    width: 430px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-image: url(imgs/Eclipse.png);   
+    background-position: -50px 0px;
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+
+.textos-card{
+    display: block;
+    height: auto;
+    width: auto;
+    padding-left: 20px;
+    color: white;
+}
+
+.textos-card h5{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.textos-card p{
+    font-size: 12px;
+    text-align:left;
+    line-height: 19px;
+    margin-top: -40px;
+}
+
+.botao-pro{
+    border-radius: 8px;
+    height: 40px;
+    width: 250px;
+    border: none;
+    margin-left: 100px;
+    margin-top: 20px;
+    box-shadow:  0.1em 0.1em 0.2em -0.1em black;
+    font-weight: bold;
+}
+
+.facebook{
+    background-color: white;
+    height: 300px;
+    width: 430px;
+    border-radius: 5px;
+}
+
+.facebook p {
+    color: #b2acae;
+    font-size: 12px;
+    margin: 20px;
+    text-align:center;
+}
+
+.facebook img{
+    height: 150px;
+    width: 200px;
+    padding-left: 120px;
+}
+
+.facebook button{
+    background-color: #435a9e;
+    color: white;
+    border: none;
+}
+
+.botao-facebook{
+    border-radius: 8px;
+    height: 40px;
+    width: 250px;
+    margin-left: 100px;
+    margin-top: 20px;
+    box-shadow:  0.1em 0.1em 0.2em -0.1em black;
+    font-weight: bold;
+}
+
+.botao-pro, .botao-facebook:hover{
+    cursor: pointer;
+}
+
+
+
+/*PROPAGANDA VERTICAL*/
+
+.conteiner-propaganda{
+    box-sizing: border-box;
+    display: block;
+    background-color: #ffffff;
+    width: 300px;
+    height: 200px;
+    margin-left: 70px;
+    margin-top: -20px;
+}
+
+.propaganda-publi-gato{
+    background-color: #ff7805;
+    width: 100%;
+    height: 60px;
+}
+
+.titulo-conteiner-pro{
+    color: #b2acae;
+    padding-left: 68px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    font-size: 15px;
+}
+
+.sobre-gato-mestre{
+    float: left;
+    width: 450px;
+    height: auto;
+    display: block;
+    padding-top: 0px;
+}
+.botoes-gato-mestre{
+    text-align: center;
+}
+
+.botoes-gato-mestre button{
+    display: block;
+    height: 35px;
+    width: 250px;
+    margin: 10px;
+    margin-left: 25px;
+    background-color: white;
+    font-weight: 600;
+    font-family: 'roboto';
+    border-style: none;
+    border-radius: 3px;
+    box-shadow:  0.1em 0.1em 0.2em -0.1em black;
+    font-size: 12px;
+}
+
+.botoes-gato-mestre button:hover{
+    cursor: pointer;
+}
+
+#conheca-button{
+    background-color: #ff7805;
+    color: #ffffff;
+}
+
+#gatomestre-button{
+    border-style: none;
+    box-shadow: none;
+}
+
+.botoes-gato-mestre span {
+    background-color: #eeb958; 
+}
+
+.propaganda-publi-gato{
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'roboto';
+    font-size: 14px;
+    background-image: url(imgs/share-gato-mestre.png);   
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.propaganda-publi-gato p {
+    padding: 10px;
+}
+
+/*MAIORES PONTUADORES*/
+
+.maiores-pontuadores{
+    margin-top: 30px;
+    height: 200px;
+}
+
+.conteiners-competicao{
+    margin-bottom: 100px; 
+}
+
+.box-competicao-01{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 880px;
+    border-radius: 5px;
+    float: right;
+    margin-right: 190px;
+}
+
+.box-competicao-01 img {
+    height: 80px;
+    width: 80px;
+}
+
+.informações-competicoes-01{
+    height: 80px;
+    width: auto;
+}
+
+.informações-competicoes-011 p, .informações-competicoes-01 h5 {
+    margin-bottom: -10px;
+}
+
+.informações-competicoes-01 p{
+    font-size: 11px;
+    color: #b2acae;
+}
+
+.informações-competicoes-01 h5{
+    margin-top: -5px;
+    margin-bottom: -5px;
+    font-size: 15px;
+}
+
+.titulos-competicoes{
+    display: flex;
+}
+
+.titulos-competicoes h5{
+    margin-left: 730px;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #ff7805;
+}
+
+.titulos-competicoes h5:hover{
+    cursor: pointer;
+}
+
+.colocacao{
+    margin-left: 750px;
+    margin-top: -80px;
+}
+
+/*PARTIDAS*/
+
+.tabela-partidas{
+    margin-top: 70px;
+    height: 200px;
+    float: right;
+}
+
+.box-partida-01{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 880px;
+    border-radius: 5px;
+    float: right;
+    margin-right: 190px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulos-tabela{
+    display: flex;
+}
+
+.titulos-tabela h5{
+    margin-left: 660px;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #ff7805;
+}
+
+.titulos-tabela p {
+    margin-left: 450px;
+}
+
+.titulos-tabela h5:hover{
+    cursor: pointer;
+}
+
+.box-partida-01 p{
+    font-size: 12px;
+    margin-top: 10px;
+    color:rgb(110, 110, 110);
+}
+
+.confronto{
+    display: flex;
+    
+}
+
+.times{
+   display: flex;
+}
+
+.times p{
+    font-size: 15px;
+    margin-top: -30px;
+    margin-left: 320px;
+    margin-right: -230px;
+}
+
+.box-partida-01 img{
+    height: 40px;
+    width: 40px;
+    margin-left: 265px;
+    margin-top: -10px;
+}
+
+/*CRÉDITOS*/
+
+.creditos{
+    display: flex;
+    background-color: white;
+    height: 150px;
+    width: 100%;
+    margin-top: 820px;
+    margin-bottom: 30px;
+}
+
+
+.play-store img{
+
+    height: 75px;
+    width: 175px;
+    float: right;
+    padding-top: 30px;
+    margin-left: 460px;
+
+}
+
+.creditos-links{
+    display: flex;
+    margin-left: 420px;
+    margin-top: -20px;
+}
+
+.creditos-links h5{
+    font-size: 12px;
+}
+
+.creditos-links p{
+    font-size: 13px;
+    line-height: 10px;
+}
+
+.creditos-links a{
+    color: black;
+}
+
+
+
+/*RODAPÉ*/
+
+footer{
+    text-align: center;
+    font-size: 12px;
+}
